@@ -1,13 +1,14 @@
 {
   "name": "@cfy/frontend",
   "type": "module",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "packageManager": "pnpm@9.15.0",
   "exports": {
     ".": {
       "import": "./dist/frontend.es.js",
       "require": "./dist/frontend.umd.js"
-    }
+    },
+    "./styles": "./dist/frontend.css"
   },
   "main": "dist/frontend.umd.js",
   "module": "dist/frontend.es.js",
