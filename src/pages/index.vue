@@ -7,7 +7,7 @@ const count = ref(0)
 </script>
 
 <template>
-  <!-- <h1 color="$luna-color-primary">
+  <!-- <h1 color="$cfy-color-primary">
     {{ msg }}
   </h1> -->
   <div class="flex flex-wrap items-center justify-center text-center">
@@ -33,7 +33,7 @@ const count = ref(0)
 </template>
 
 <style lang="scss" scoped>
-.luna-button {
+.cfy-button {
   & + & {
     margin-left: 20px;
   }
