@@ -1,4 +1,4 @@
-import type { UserModule } from './types/index'
+import type { UserModule } from './types/types.ts'
 import { ViteSSG } from 'vite-ssg'
 
 // import "~/styles/element/index.scss";

@@ -8,11 +8,16 @@
     "useDefineForClassFields": true,
     "baseUrl": ".",
     "module": "esnext",
-    "moduleResolution": "bundler",
+    "moduleResolution": "node", // 生成 .d.ts.map 文件
     "paths": {
-      "~/*": ["src/*"]
+      "~/*": ["src/*"],
+      "@cfy/frontend": ["@cfy/frontend/dist"]
     },
     "resolveJsonModule": true,
+    "typeRoots": [
+      "node_modules/@types", // 默认的类型查找路径
+      "src/types" // 如果你在项目中使用自定义类型，可以加这个路径
+    ],
     "types": [
       "vite/client",
       "unplugin-vue-router/client"
@@ -20,6 +25,7 @@
     "strict": true,
     "declaration": true,
     "declarationDir": "dist/types",
+    "declarationMap": true,
     "outDir": "dist",
     "sourceMap": true,
     "esModuleInterop": true,

@@ -8,6 +8,7 @@ import Components from 'unplugin-vue-components/vite'
 
 import VueRouter from 'unplugin-vue-router/vite'
 import { defineConfig } from 'vite'
+import VitePluginDts from 'vite-plugin-dts'
 
 // https://vitejs.dev/config/
 export default defineConfig((): UserConfig => {
@@ -35,6 +36,10 @@ export default defineConfig((): UserConfig => {
       VueRouter({
         extensions: ['.vue', '.md'],
         dts: 'src/types/typed-router.d.ts',
+      }),
+
+      VitePluginDts({
+        tsconfigPath: './tsconfig.json', // 指定 tsconfig 文件路径
       }),
 
       Components({

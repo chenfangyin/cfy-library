@@ -1,7 +1,7 @@
 {
   "name": "@cfy/frontend",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "packageManager": "pnpm@9.15.0",
   "exports": {
     ".": {
@@ -50,6 +50,7 @@
     "unplugin-vue-components": "^0.27.5",
     "unplugin-vue-router": "^0.10.9",
     "vite": "^6.0.3",
+    "vite-plugin-dts": "^4.4.0",
     "vite-ssg": "^0.24.2",
     "vue-tsc": "^2.1.10"
   }
