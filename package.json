@@ -1,14 +1,22 @@
 {
-  "name": "element-plus-vite-starter",
+  "name": "@cfy/frontend",
   "type": "module",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.0.0",
   "packageManager": "pnpm@9.15.0",
-  "license": "MIT",
-  "homepage": "https://vite-starter.element-plus.org",
-  "repository": {
-    "url": "https://github.com/element-plus/element-plus-vite-starter"
+  "exports": {
+    ".": {
+      "import": "./dist/frontend.es.js",
+      "require": "./dist/frontend.umd.js"
+    }
   },
+  "main": "dist/frontend.umd.js",
+  "module": "dist/frontend.es.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "README.md",
+    "dist",
+    "src/types"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -21,13 +29,16 @@
     "@element-plus/icons-vue": "^2.3.1",
     "@vueuse/core": "^12.0.0",
     "element-plus": "^2.9.0",
+    "lodash-es": "^4.17.21",
     "vue": "^3.5.13",
+    "vue-json-pretty": "^2.4.0",
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^3.11.2",
     "@iconify-json/ep": "^1.2.1",
     "@iconify-json/ri": "^1.2.3",
+    "@types/lodash-es": "^4.17.12",
     "@types/node": "^20.17.10",
     "@unocss/eslint-plugin": "^0.65.1",
     "@vitejs/plugin-vue": "^5.2.1",

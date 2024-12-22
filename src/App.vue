@@ -1,22 +1,11 @@
 <template>
-  <el-config-provider namespace="ep">
-    <BaseHeader />
+  <el-config-provider namespace="cfy">
+    <!-- <BaseHeader /> -->
     <div class="main-container flex">
-      <BaseSide />
-      <div w="full" py="4">
-        <RouterView />
-      </div>
+      <!-- <BaseSide /> -->
+      <!-- <div w="full" py="4">
+      </div> -->
+      <RouterView />
     </div>
   </el-config-provider>
 </template>
-
-<style>
-#app {
-  text-align: center;
-  color: var(--ep-text-color-primary);
-}
-
-.main-container {
-  height: calc(100vh - var(--ep-menu-item-height) - 4px);
-}
-</style>

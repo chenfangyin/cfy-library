@@ -2,6 +2,7 @@
 
 node_modules
 .DS_Store
+.history
 dist
 dist-ssr
 *.local
@@ -11,3 +12,13 @@ yarn.lock
 package-lock.json
 
 *.log
+*.tgz
+*.zip
+*.tar.gz
+*.tar
+*.gz
+*.rar
+*.7z
+*.iso
+*.dmg
+*.bin

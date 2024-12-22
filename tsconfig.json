@@ -2,6 +2,8 @@
   "compilerOptions": {
     "target": "esnext",
     "jsx": "preserve",
+    "jsxFactory": "h",
+    "jsxFragmentFactory": "Fragment",
     "lib": ["esnext", "dom"],
     "useDefineForClassFields": true,
     "baseUrl": ".",
@@ -16,6 +18,9 @@
       "unplugin-vue-router/client"
     ],
     "strict": true,
+    "declaration": true,
+    "declarationDir": "dist/types",
+    "outDir": "dist",
     "sourceMap": true,
     "esModuleInterop": true,
     "skipLibCheck": true
