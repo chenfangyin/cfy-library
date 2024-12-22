@@ -70,18 +70,15 @@ export default defineConfig((): UserConfig => {
         external: [
           'vue',
           'lodash-es',
-          'element-plus',
-          '@element-plus/icons-vue',
-          'vue-json-pretty',
+          // 'element-plus',
+          // 'vue-json-pretty',
         ], // 排除不需要打包的依赖
         output: {
           globals: {
             'vue': 'Vue',
-            'vue-i18n': 'VueI18n',
             'lodash-es': 'lodash',
-            'element-plus': 'ElementPlus',
-            '@element-plus/icons-vue': 'ElementPlusIconsVue',
-            'vue-json-pretty': 'VueJsonPretty',
+            // 'element-plus': 'ElementPlus',
+            // 'vue-json-pretty': 'VueJsonPretty',
           },
         },
       },
