@@ -6,9 +6,9 @@
   "exports": {
     ".": {
       "import": "./dist/frontend.es.js",
-      "require": "./dist/frontend.umd.js"
-    },
-    "./styles": "./dist/frontend.css"
+      "require": "./dist/frontend.umd.js",
+      "css": "./dist/frontend.css"
+    }
   },
   "main": "dist/frontend.umd.js",
   "module": "dist/frontend.es.js",

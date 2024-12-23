@@ -2,7 +2,7 @@
 @use 'element-plus/theme-chalk/src/dark/css-vars.scss' as *;
 
 // :root {
-//   --cfy-color-primary: red;
+//   --el-color-primary: red;
 // }
 
 body {
@@ -14,14 +14,14 @@ body {
 }
 
 a {
-  color: var(--cfy-color-primary);
+  color: var(--el-color-primary);
 }
 
 code {
   border-radius: 2px;
   padding: 2px 4px;
-  background-color: var(--cfy-color-primary-light-9);
-  color: var(--cfy-color-primary);
+  background-color: var(--el-color-primary-light-9);
+  color: var(--el-color-primary);
 }
 
 #nprogress {

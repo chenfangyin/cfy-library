@@ -1,5 +1,5 @@
 <template>
-  <el-config-provider namespace="cfy">
+  <el-config-provider namespace="el">
     <div class="main-container flex">
       <RouterView />
     </div>
